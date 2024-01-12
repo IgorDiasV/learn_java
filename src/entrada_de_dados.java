@@ -14,8 +14,19 @@ public class entrada_de_dados {
 		System.out.println("Você digitou: " + entradaChar);
 		
 		String entradaTexto;
+		
+		// faz a leitura ate o primeiro espaço
 		entradaTexto = sc.next();
 		System.out.println("Você digitou: " + entradaTexto);
+		
+		// faz a leitura ate o final da linha
+		entradaTexto = sc.nextLine();
+		System.out.println("Você digitou: " + entradaTexto);
+		
+		// observação sobre usar o nextline após outras leituras de tipos diferenetes
+		// ao realizar leitura de outro tipo a quebra de linha fica pendente, ao usar o nextline
+		// ele acaba realizando a leitura do enter pendente e não se comporta como o esperado.
+		// para resolver o problema, é necessario usar um nextLine extra antes do nextLine planejado
 		
 		int entradaInt;
 		entradaInt = sc.nextInt();
@@ -28,6 +39,7 @@ public class entrada_de_dados {
 		double entradaDouble;
 		entradaDouble = sc.nextDouble();
 		System.out.println("Você digitou: " + entradaDouble);
+		
 		
 		sc.close();
 	}

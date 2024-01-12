@@ -16,6 +16,13 @@ public class funcoesParaString {
         // Substitui um trecho por outro 
         System.out.println(texto.replace("teste", "hello"));
 
-        System.out.println(texto.indexOf("teste"))
+        // indica o indice onde aparece pela primeira vez o texto pesquisado
+        System.out.println(texto.indexOf("teste"));
+
+        // indica o indice onde aparece pela ultima vez o texto pesquisado
+        System.out.println(texto.lastIndexOf("teste"));
+
+        // transforma a string em um vetor baseado no parametro usado pra dividir o texto
+        System.out.println(texto.split(" ")[2]);
     }
 }
