@@ -1,0 +1,1 @@
+![teste](imgs/secao13ex1.png)
