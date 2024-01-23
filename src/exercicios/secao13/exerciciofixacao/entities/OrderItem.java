@@ -1,12 +1,11 @@
 package exercicios.secao13.exerciciofixacao.entities;
 
-public class OrdemItem {
+public class OrderItem {
     private Integer quantity;
-    private Double price;
     private Product product;
     private Client client;
 
-    public OrdemItem(Integer quantity, Product product, Client client){
+    public OrderItem(Integer quantity, Product product, Client client){
         this.quantity = quantity;
         this.product = product;
         this.client = client;
@@ -16,4 +15,7 @@ public class OrdemItem {
         return this.quantity*this.product.getPrice();
     }
     
+    public String toString(){
+        return this.product.getName() + ", $" + this.product.getPrice() +", Quantity: " + this.quantity + ", Subtotal: " + subTotal();
+    }
 }
